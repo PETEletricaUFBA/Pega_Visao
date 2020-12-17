@@ -7,7 +7,7 @@ blank = np.zeros((500,500,3), dtype='uint8')
 cv.imshow('Blank', blank)
 
 # 1. Paint the image a certain colour
-blank[200:300, 300:400] = 0,255,0 #Todas as funções do OPENCV seguem o esquema BGR (blue,green.red)
+blank[200:300, 300:400] = 0,255,0 #Todas as funções do OPENCV seguem o esquema BGR (blue,green,red)
 cv.imshow('Green', blank)
 
 # 2. Draw a Rectangle
