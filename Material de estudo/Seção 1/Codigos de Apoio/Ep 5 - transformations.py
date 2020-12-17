@@ -39,7 +39,7 @@ cv.imshow('Rotated', rotated)
 rotated_rotated = rotate(img, -90)
 cv.imshow('Rotated Rotated', rotated_rotated)
 
-# Resizing igual ao arquivo img_resize.py
+# Resizing/Redimensionar igual ao arquivo resize.py
 resized = cv.resize(img, (500,500), interpolation=cv.INTER_CUBIC)
 cv.imshow('Resized', resized)
 
