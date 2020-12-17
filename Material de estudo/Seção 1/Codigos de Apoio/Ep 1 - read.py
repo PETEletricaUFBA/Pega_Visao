@@ -2,13 +2,13 @@
 import cv2 as cv
 
 # Lendo Imagens/Reading Images
-img = cv.imread('Photos/cats.jpg')   #cv.comando('NOME_JANELA')
+img = cv.imread('Material de estudo/Resources/Photos/cats.jpg')   #cv.comando('NOME_JANELA')
 cv.imshow('Cats', img)               #cv.comando('NOME_JANELA',VARIAVEL)
 
 cv.waitKey(0) #espera o usuário apertar o teclado
 
 # Lendo Videos/Reading Videos
-capture = cv.VideoCapture('Videos/dog.mp4') 
+capture = cv.VideoCapture('Material de estudo/Resources/Videos/dog.mp4') 
 
 while True:
     isTrue, frame = capture.read()
