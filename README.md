@@ -52,7 +52,7 @@ Então qualquer contribuição seja com exemplos de python ou de ESP são muito 
 * [Fred Souza](https://github.com/3fred3/3fred3)
 * [Isaac Araujo](https://github.com/isaacpcaraujo)
 * [Rafael Short](https://github.com/RafaelShort)
-* Nathane
+* [Nathane Lima](https://github.com/nathanelc)
 * [Victor Coutinho](https://github.com/ViktorCVS)
 
 ## Licença
