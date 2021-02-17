@@ -1,16 +1,22 @@
-# Seção 1 - Básico
 
 Os códigos de apoio numerados por episódio estão disponíveis no Git do projeto.
 
-## Introdução - Instalação do Python e bibliotecas
+# Introdução - Instalação do Python e bibliotecas
 
 Pyhton é uma linguagem de programação com muitas aplicações devido as bibliotecas criadas pela comunidade. Para instalar Python entre no link, Download Python | Python.org, sempre instale a versão mais recente do programa.
 Para instalar as bibliotecas no seu computador existem dois modos, instalar usando o terminal ou instalar colocando as pastas da biblioteca no mesmo domínio dos seus códigos.  
 
 No primeiro modo você deve abrir seu terminal(CMD), digitar no terminal o comando “pip install opencv-contrib-python”, use também “pip install caer” para funções nas partes avançadas. Caso ocorra um erro no uso do comando pip, vá até Sistema>Propriedade dos Sistema>Variáveis de Ambiente e coloque em variáveis para o usuário uma nova variável com o nome “pip” com valor “C:Users/[nome_do_ usuário]/AppData/Local/Programs/Python/[nome_da_pasta_python]/Scripts”. Você pode achar essa pasta “Scripts” e copiar o local e colar no valor da variável.
 
+## Editores de Texto
+VScode 
+Vim
+Atom
+
+
 No segundo caso basta apenas baixar a biblioteca com uma pasta zip e extrair essa pasta para a mesma pasta do seus códigos, mas saiba que as importações só funcionaram nesta pasta.
 
+# Secção 1
 ## Episódio 1 - Leitura de imagens e vídeos
 
 A leitura de imagens e vídeos com a biblioteca Open CV é feita através das funções `cv2.imread('arquivo de imagem')` e `cv2.VideroCapture('arquivo de vídeo')`. Para garantir que a mídia seja encontrada, o seu respectivo arquivo deve ter o caminho especificado.
@@ -125,6 +131,9 @@ Dentre os métodos de gerar imagens binárias no OpenCV para usarmos para encont
   * Aplica um nível fixo de threshold para cada elemento da array(no nosso caso um frame ou imagem), podendo gerar a imagem binária a partir de uma escala de cinzas ou remover ruídos de imagens coloridas. Tendo como parâmetros obrigatórios a array de entrada, o valor para threshold, valor máximo a ser usado com os tipos de thresholding THRESH_BINARY e THRESH_BINARY_INV e o tipo de thresholding[11] a ser usado, tendo como parâmetro facultativo a array de saída do mesmo tamanho da de entrada.
 * `dst = cv.adaptiveThreshold( src, maxValue, adaptiveMethod, thresholdType, blockSize, C[, dst] )`
   * Função que gera um thresholding adaptativo de uma imagem em escala de cinza a partir de uma determinada fórmula,( conferir na documentação) [12], onde tem como parâmetros obrigatórios a imagem de entrada em escala de cinza, o valor máximo de thresholding, o algoritmo usado como método[13], o tipo de threshold¹¹ a ser usado, o tamanho da vizinhança usada para calcular o valor do threshold, e o valor subtraído da média ou média ponderada.
+
+# Secção 2
+## Epsódio 7: Detector de faces
 
 ________________
 [1] "Image file reading and writing - OpenCV." <https://docs.opencv.org/4.5.0/d4/da8/group__imgcodecs.html>. Accessed 18 Nov. 2020.  
