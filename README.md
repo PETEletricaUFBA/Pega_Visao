@@ -13,8 +13,7 @@
 
 ## Sobre o Projeto
 
-A ideia do projeto é desenvolver um sistema com NodeMCU capaz de identificar faces e acionar um sistema de tranca magnética.
-Desse modo, estudaremos as bibliotecas padrões dessa área da computação por intermédio da linguagem Python, aplicando-a em conjunto com o NodeMCU.
+A ideia do projeto é desenvolver um sistema com NodeMCU capaz de identificar faces e acionar um sistema de tranca magnética. Desse modo, estudaremos as bibliotecas padrões dessa área da computação através da framework ESP-IDF e da linguagem de programação Python, aplicando-a em conjunto com o NodeMCU.
 
 ### Software usados
 
