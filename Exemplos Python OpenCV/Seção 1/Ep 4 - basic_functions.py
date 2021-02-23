@@ -2,7 +2,7 @@
 
 import cv2 as cv
 
-img = cv.imread('Material de estudo/Resources/Photos/park.jpg')
+img = cv.imread('Exemplos Python OpenCV/Resources/Photos/park.jpg')
 cv.imshow('Park', img)
 
 # Converting to grayscale

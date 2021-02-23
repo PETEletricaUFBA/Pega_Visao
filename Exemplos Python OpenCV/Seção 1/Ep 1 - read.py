@@ -2,7 +2,7 @@
 import cv2 as cv
 
 # Lendo Imagens/Reading Images
-img = cv.imread('Material de estudo/Resources/Photos/cats.jpg')   #cv.comando('NOME_JANELA')
+img = cv.imread('Exemplos Python OpenCV/Resources/Photos/cats.jpg')   #cv.comando('NOME_JANELA')
 cv.imshow('Cats', img)               #cv.comando('NOME_JANELA',VARIAVEL)
 
 cv.waitKey(0) #espera o usuário apertar o teclado

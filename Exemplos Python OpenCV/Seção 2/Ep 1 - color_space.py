@@ -1,7 +1,7 @@
 import cv2 as cv
 import matplotlib.pyplot as plt
 
-img = cv.imread('Material de estudo/Resources/Photos/park.jpg')
+img = cv.imread('Exemplos Python OpenCV/Resources/Photos/park.jpg')
 cv.imshow('IMG', img)
 
 rgb = cv.cvtColor(img, cv.COLOR_BGR2RGB)

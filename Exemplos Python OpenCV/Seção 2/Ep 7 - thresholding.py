@@ -1,6 +1,6 @@
 import cv2 as cv
 
-img = cv.imread('Material de estudo/Resources/Photos/cats.jpg')
+img = cv.imread('Exemplos Python OpenCV/Resources/Photos/cats.jpg')
 cv.imshow('IMG', img)
 
 gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)

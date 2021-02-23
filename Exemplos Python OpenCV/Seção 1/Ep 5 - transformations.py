@@ -3,13 +3,13 @@
 import cv2 as cv
 import numpy as np
 
-img = cv.imread('Material de estudo/Resources/Photos/park.jpg')
+img = cv.imread('Exemplos Python OpenCV/Resources/Photos/park.jpg')
 cv.imshow('Park', img)
 
 # para fazer transformações deveremos criar algumas funções a parte a biblioteca
 
 #Translação
-def translate(img,x,-y):
+def translate(img,x,y):
     transMat = np.float32([[1,0,x],[0,1,y]])
     dimensions = (img.shape[1], img.shape[0]) # img.shape[1] = largura img.shap[0] = altura
     return cv.warpAffine(img,transMat,dimensions)
@@ -35,6 +35,9 @@ def rotate(img,angle,rotPoint=None):
 # a rotação acontece no sentido anti-horário para valores positivos
 rotated = rotate(img, -45)
 cv.imshow('Rotated', rotated)
+
+rotated2 = rotate(rotated, -45)
+cv.imshow('Rotated2', rotated2)
 
 rotated_rotated = rotate(img, -90)
 cv.imshow('Rotated Rotated', rotated_rotated)
