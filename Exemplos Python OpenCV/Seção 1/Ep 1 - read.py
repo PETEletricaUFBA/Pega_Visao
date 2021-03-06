@@ -1,4 +1,3 @@
-
 import cv2 as cv
 
 # Lendo Imagens/Reading Images
@@ -8,7 +7,7 @@ cv.imshow('Cats', img)               #cv.comando('NOME_JANELA',VARIAVEL)
 cv.waitKey(0) #espera o usuário apertar o teclado
 
 # Lendo Videos/Reading Videos
-capture = cv.VideoCapture('Material de estudo/Resources/Videos/dog.mp4') 
+capture = cv.VideoCapture('Exemplos Python OpenCV/Resources/Videos/dog.mp4') 
 
 while True:
     isTrue, frame = capture.read()
