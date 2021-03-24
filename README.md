@@ -14,6 +14,7 @@
 ## Sobre o Projeto
 
 A ideia do projeto é desenvolver um sistema com NodeMCU capaz de identificar faces e acionar um sistema de tranca magnética. Desse modo, estudaremos as bibliotecas padrões dessa área da computação através da framework ESP-IDF e da linguagem de programação Python, aplicando-a em conjunto com o NodeMCU.
+No nosso [wiki](https://github.com/PETEletricaUFBA/Pega_Visao/wiki) constará o manual do nosso projeto e informações importantes que ajudarão a entender melhor o projeto.
 
 ### Software usados
 
@@ -30,7 +31,7 @@ A ideia do projeto é desenvolver um sistema com NodeMCU capaz de identificar fa
 
 ## Metas
 
-* Manual
+* [Manual](https://github.com/PETEletricaUFBA/Pega_Visao/wiki)
   * Modulo 1: O ESP e como programá-lo
   * Modulo 2: OpenCV
   * Modulo 3: Integração do OpenCV ao ESP
