@@ -3,10 +3,13 @@ from time import sleep
 import os
 import numpy as np
 
-key = cv2. waitKey(1)
+DIR = r'Exemplos Python OpenCV/Resources/Faces/train/' + 'test' # Especifique a pasta nova
+
+key = cv2.waitKey(1)
 webcam = cv2.VideoCapture(0)
-haar = cv2.CascadeClassifier('haar_cascade.xml')
-os.mkdir('Fotos') #talvez precise criar um pasta
+haar = cv2.CascadeClassifier('Aplicações/haar_cascade.xml')
+os.mkdir(DIR) #talvez precise criar um pasta
+os.chdir(DIR)# mude aqui para selecionar a pasta
 
 i = 0
 sleep(2)
@@ -17,7 +20,7 @@ while True:
         cv2.imshow("Capturing", frame)
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         faces_detected = haar.detectMultiScale(gray, scaleFactor=1.1 , minNeighbors= 5)
-        os.chdir('Fotos')# mude aqui para selecionar a pasta
+        
         cv2.imwrite(filename=f'foto{i}.jpg', img=frame)
         i = i + 1
 

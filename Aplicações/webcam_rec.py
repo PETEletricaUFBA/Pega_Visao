@@ -2,15 +2,19 @@ import cv2
 from time import sleep
 import numpy as np
 
+DIR = r'Exemplos Python OpenCV/Resources/Faces/train'#alterar o caminho se necessário
 
-haar = cv2.CascadeClassifier('haar_cascade.xml')
-features = np.load('features.npy', allow_pickle=True)
-labels = np.load('labels.npy', allow_pickle=True)
+haar = cv2.CascadeClassifier('Aplicações/haar_face.xml')
+features = np.load('Aplicações/features.npy', allow_pickle=True)
+labels = np.load('Aplicações/labels.npy', allow_pickle=True)
 
 face_recognizer= cv2.face.LBPHFaceRecognizer_create()
-face_recognizer.read('face.yml') # arquivo resultado do face_trainer.py
+face_recognizer.read('Aplicações/face.yml') # arquivo resultado do face_trainer.py
 
-people = ['FRED','Neymar','Desconhecido']
+people = []
+for i in os.listdir(DIR):
+    people.append(i)
+
 key = cv2. waitKey(1)
 webcam = cv2.VideoCapture(0)
 
