@@ -1,4 +1,5 @@
 import cv2
+import os
 from time import sleep
 import numpy as np
 
@@ -33,8 +34,8 @@ while True:
             label, confidence  = face_recognizer.predict(face_roi)
             print(f'Label = {people[label]} with confidence of {confidence}')
 
-            cv2.putText(frame, str(people[label]), (20,20), cv2.FONT_HERSHEY_COMPLEX, 1.0, (0,255,0), thickness=2)
-            cv2.rectangle(frame, (x,y), (x+a,y+b), (0,255,0), thickness=2)
+            # cv2.putText(frame, str(people[label]), (20,20), cv2.FONT_HERSHEY_COMPLEX, 1.0, (0,255,0), thickness=2)
+            # cv2.rectangle(frame, (x,y), (x+a,y+b), (0,255,0), thickness=2)
 
         cv2.imshow("Capturing", frame)
 
