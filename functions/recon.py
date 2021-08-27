@@ -37,4 +37,3 @@ def recon(imgDIR, DIR):
     cv2.imwrite(filename=DIR + '/waiting/' + f'{date_time}-{label}-{confidence}.jpg', img=img)
 
     return label, confidence
-

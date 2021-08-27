@@ -1,0 +1,21 @@
+## Declaração das bibliotecas e modulos usados
+
+## Especificações das portas usadas
+
+## Descrição do sistema
+
+O sistema constara com:
+    Botão   (Input)
+    Camera  (Input)
+    Motor   (Output)
+
+Descrição de uso
+    O usuario irá apertar o botão, a camera irá tirar foto do rosto, salvar como arquivo(.jpg) temporariamente, e irá chamar a função de reconhecimento, passando a imagem como parametro, e irá aguardar o retorno na função, que irá informar o rosto reconhecido na imagem e sua confiança. Caso a pessoa reconhecida conste na lista de pessoas autorizadas a porta será aberta.
+    Em paralelo será possivel gerar e atualizar as informações do sistema. 
+
+
+Banco de dados: Joelton
+
+Interação externa(Acessar a função a partir do ESP ou do Site, ou o que for melhor): Fred
+
+Signup(programar a parte de cadastrar novas pessoas no pega visão): Ray

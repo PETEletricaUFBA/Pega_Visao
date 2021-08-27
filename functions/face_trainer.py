@@ -16,7 +16,7 @@ def face_trainer(DIR):
 
     def createTrain():
         for person in people:
-            path = os.path.join(DIR, person)
+            path = os.path.join(DIR + '/train', person)
             label = people.index(person)
 
             for img in os.listdir(path):
@@ -47,5 +47,3 @@ def face_trainer(DIR):
     face_recognizer.save(DIR + '/face_trained.yml')
     np.save(DIR + '/features.npy', features)
     np.save(DIR + '/labels.npy', labels)
-
-
