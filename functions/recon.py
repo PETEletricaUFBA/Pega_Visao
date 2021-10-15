@@ -29,7 +29,7 @@ def recon(imgDIR, DIR):
         faces_roi = gray[y:y+h, x:x+w]
 
         label, confidence  = face_recognizer.predict(faces_roi)
-        print(f'Label = {people[label]} with confidence of {confidence}')
+        # print(f'Label = {people[label]} with confidence of {confidence}')
 
     now = datetime.now()
     date_time = now.strftime("%Y%m%d-%H%M%S")
@@ -37,3 +37,5 @@ def recon(imgDIR, DIR):
     cv2.imwrite(filename=DIR + '/waiting/' + f'{date_time}-{label}-{confidence}.jpg', img=img)
 
     return label, confidence
+
+print(recon(imgDIRe,DIRe))
